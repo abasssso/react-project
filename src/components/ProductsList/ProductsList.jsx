@@ -6,6 +6,7 @@ import ProductCard from "../ProductCard/ProductCard";
 
 const ProductsList = () => {
   const { products, getProducts, pages } = useContext(productsContext);
+
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState(
     searchParams.get("q") ? searchParams.get("q") : ""
